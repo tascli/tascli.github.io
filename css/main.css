@@ -65,7 +65,15 @@ a {
 .footer ul {
   list-style: none;
   display: flex;
+  padding: 0px;
   justify-content: space-around;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .text {
+    font-size: 22px;
+  }
 }
