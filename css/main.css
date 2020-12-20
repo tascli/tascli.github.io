@@ -1,9 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300';
 html,
 body {
   font-family: 'Roboto Mono', monospace;
   height: 100%;
-  font-size: 16px;
+  font-size: 20px;
   overflow: hidden;
   margin: 0px;
 }
@@ -40,12 +40,33 @@ a {
   transition: ease 0.2s;
 }
 
+a.normal {
+  letter-spacing: normal;
+  text-decoration: underline black;
+}
+
+body.dark a.normal {
+  text-decoration: underline #fafafa;
+}
+
+a.normal:hover {
+  text-decoration: underline #6e6e6e;
+}
+
+body.dark a.normal:hover {
+  text-decoration: underline #6e6e6e;
+}
+
 .container {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.horizontal {
+  flex-direction: column;
 }
 
 .text {
@@ -61,6 +82,10 @@ a {
   position: absolute;
   bottom: 10px;
   width: 100%;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .footer ul {

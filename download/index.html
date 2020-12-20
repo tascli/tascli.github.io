@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>tascli</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <meta name="description" content="TasCli is an open-source task-manager like monday.com, but for command line lovers 💕. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="language" content="English">
+</head>
+<body class="light">
+  <!-- TEXT -->
+  <div class="container horizontal">
+    <div class="text-left">
+      <h3>Windows:</h3>
+      <ol>
+        <li>Download the <a href="https://github.com/tascli/tascli/raw/master/tascli.exe" class="normal">tascli.exe</a> and drag it where ever you like</li>
+        <li>Open the cmd and type: <code>setx PATH "PATH TO YOUR DOWNLOADED .EXE"</code></li>
+        <li>Done 😀</li>
+      </ol>
+      <h3>Linux / Mac / Windows:</h3>
+      <ol>
+        <li>Download <a href="https://nodejs.org" class="normal">node.js</a></li>
+        <li>Check if node installed by typing <code>node -v</code></li>
+        <li>Start installing with this command: <code>npm install -g tascli</code></li>
+        <li>Done 😩</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <ul>
+      <li><a href="https://github.com/tascli/tascli/blob/master/README.md">Docs</a></li>
+      <li><a href="../">Home</a></li>
+      <li><a href="https://github.com/tascli/tascli">Github</a></li>
+    </ul>
+  </div>
+
+  <script src="../js/main.js"></script>
+
+  <script>
+    body = document.getElementsByTagName('body')
+    darkmode = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    if (darkmode) {
+      document.querySelector('body').classList.remove('light');
+      document.querySelector('body').classList.add('dark');
+    } else {
+      document.querySelector('body').classList.remove('dark')
+      document.querySelector('body').classList.add('light')
+    }
+  </script>
+</body>
+</html>
